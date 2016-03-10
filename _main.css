@@ -24,6 +24,117 @@ body textarea:required:valid {
 	
 }
 
-.nav li {
+.navbar {
+    background: url("img/slidecity.jpg") no-repeat center;
+    background-size: cover;
+
+}
+.navbar-row {
+    margin: 20px 0;
+}
+
+hr {
+    height: 1px;
+    color: #080808;
+    z-index: 1000;
+}
+.center {
+    text-align: center;
+}
+a.logo, a.phone {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+}
+
+a.logo  {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 46px;
+    border-right: 1px solid #ffffff;
+    padding-right: 20px;
+
+
+}
+a.phone {
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-left: 20px;
+
+}
+
+.main-nav {
+    overflow: hidden;
+}
+.main-nav-menu {
+    float: right;
+}
+
+.main-nav-menu li {
     display: inline-block;
+    margin-left: 26px;
+}
+
+
+.main-nav-menu li a {
+    color: #ffffff;
+    opacity: 0.7;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.main-nav-menu li.get-started {
+    background-color: #ffffff;
+    opacity: 0.35;
+    border-radius: 2px;
+}
+
+.main-nav-menu li.get-started a {
+    color: black;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 31px;
+    text-transform: uppercase;
+    padding: 13px;
+}
+
+.main-nav-menu li.active a {
+    opacity: 1;
+}
+
+.intro {
+    padding: 93px 0 173px;
+}
+
+
+.intro h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 48px auto;
+}
+
+.btn {
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: #6fb048;
+    border-radius: 2px;
+    padding: 16px 27px;
+    margin-bottom: 150px;
 }
