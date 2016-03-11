@@ -31,6 +31,12 @@ body textarea:required:valid {
 }
 .navbar-row {
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
 }
 
 hr {
@@ -41,6 +47,7 @@ hr {
 .center {
     text-align: center;
 }
+
 a.logo, a.phone {
     color: #ffffff;
     text-decoration: none;
@@ -70,9 +77,6 @@ a.phone {
 
 .main-nav {
     overflow: hidden;
-}
-.main-nav-menu {
-    float: right;
 }
 
 .main-nav-menu li {

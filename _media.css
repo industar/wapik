@@ -8,10 +8,22 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+    .nav-bar-left, .nav-bar-right {
+        margin: 10px auto 0;
+    }
+    a.phone {
+        font-size: 20px;
+    }
+    .main-nav-menu {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: outside none none;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
 	
 	/*Disable Animation on Mobile Devices*/
 	.animated {
