@@ -19,6 +19,21 @@
         flex-wrap: wrap;
         list-style: outside none none;
     }
+    .our-team-main-columns p {
+    margin-bottom: 10px;
+    }
+
+    .our-team-main-columns h5, .our-team-main-columns p {
+        text-align: center;
+        padding-left: 0;
+    }
+    .download-main-topline{
+        justify-content: center;
+        text-align: center;
+    }
+    .download-main-btn {
+        margin: 25px auto;
+    }
 }
 
 /* Small Devices, Tablets */

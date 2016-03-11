@@ -142,3 +142,108 @@ a.phone {
     padding: 16px 27px;
     margin-bottom: 150px;
 }
+
+.about-us-main {
+    padding-bottom: 100px;
+}
+
+.about-us-topline {
+    margin: 80px auto;
+    max-width: 750px;
+}
+.about-us-topline h2, .our-team-main h2 {
+    color: #0f5f5c;
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.about-us-topline p {
+    margin-top: 38px;
+}
+.about-us-topline p, .about-us p {
+    color: #83a7a5;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.about-us h4 {
+    color: #0f5f5c;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 6px;
+}
+
+.about-us-columns .col-sm-4:first-child h4  {
+    margin-top: 2px;
+}
+
+.about-us-columns .col-sm-4:last-child h4 {
+    margin-top: 8px;
+}
+
+.our-team-main {
+    background-color: #eef1ec;
+    padding-bottom: 121px;
+
+}
+
+.our-team-main-columns h5 {
+    color: #0f5f5c;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.our-team-main-columns p {
+    color: #83a7a5;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.our-team-main-columns h5, .our-team-main-columns p {
+    text-align: left;
+    padding-left: 9%;
+}
+
+.download-main {
+    height: 200px;
+    background: url("img/downloadbcg.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.download-main-topline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.download-main-topline h3 {
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 7px;
+}
+
+.download-main-topline p {
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.download-main-topline .btn {
+    background-color: #49732f;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+}
