@@ -1,19 +1,23 @@
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #83a7a5;
 	opacity: 1;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #83a7a5;
 	opacity: 1;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #83a7a5;
 	opacity: 1;
 }
 *:-ms-input-placeholder {
-	color: #666;
+	color: #83a7a5;
 	opacity: 1;
 }
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -36,14 +40,21 @@ body textarea:required:valid {
     align-items: center;
     flex-wrap: wrap;
 
-
 }
 
-hr {
+.navbar-hr {
     height: 1px;
-    color: #080808;
-    z-index: 1000;
+    opacity: 0.2;
+    background-color: white;
+    margin: 0 auto;
 }
+.about-us-hr {
+    width: 65px;
+    height: 1px;
+    background-color: #6fb048;
+    margin: 0 auto;
+}
+
 .center {
     text-align: center;
 }
@@ -71,7 +82,7 @@ a.phone {
     font-size: 13px;
     font-weight: 400;
     line-height: 21px;
-    padding-left: 20px;
+    margin-left: 20px;
 
 }
 
@@ -140,7 +151,13 @@ a.phone {
     background-color: #6fb048;
     border-radius: 2px;
     padding: 16px 27px;
-    margin-bottom: 150px;
+    text-decoration: none;
+}
+.btn:hover, .download-main-topline .btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #2991a2;
+    transition: all 0.5s ease 0s;
 }
 
 .about-us-main {
@@ -245,5 +262,137 @@ a.phone {
 .download-main-topline .btn {
     background-color: #49732f;
     font-family: Montserrat, sans-serif;
+    }
+
+.footer-main-topline {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content:space-between;
+    margin: 60px auto;
+    line-height: 28px;
+    color: #83a7a5;
     font-size: 13px;
+}
+
+.footer-main-topline a {
+    color: #83a7a5;
+}
+
+footer h6 {
+    color: #0f5f5b;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+
+}
+
+.footer-main-address h6 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Proxima Nova", sans-serif;
+    text-transform: uppercase;
+}
+.footer-main-address span {
+    padding-left: 14px;
+    color: #83a7a5;
+    line-height: 20px;
+}
+.footer-main-address li:nth-child(2) span {
+    color: #0f5f5c;
+    line-height: 28px;
+    padding: 0;
+}
+
+.footer-main-padding {
+    padding-bottom: 0.5em;
+}
+
+
+.footer-main-newsletter {
+    position: relative;
+    line-height: 18px;
+}
+.footer-main-relative {
+    position: relative;
+}
+
+.email {
+    width: 230px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #edf1eb; /* layer fill content */
+    border: none;
+    padding: 0 10px;
+    color: #83a7a5; /* text color */
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.footer-main-icon {
+    left: 89%;
+    position: absolute;
+    top: 42%;
+}
+.footer-main-icon a {
+    color: #6faf47
+}
+.footer-main-bottomline {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content:space-between;
+    margin: 10px 0;
+
+}
+
+.footer-main-bottomline p {
+    height: 13px;
+    color: #83a7a5;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.social-media li {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    margin-right: 6px;
+    text-align: center;
+}
+.social-media a {
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.twitter {
+    background-color: #55acee;
+}
+.facebook {
+    background-color: #3b5998;
+}
+.instagram {
+    background-color: #3f729b;
+}
+.dribble{
+    background-color: #ea4c89;
+}
+.github {
+    background-color: #333;
 }

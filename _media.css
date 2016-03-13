@@ -31,8 +31,33 @@
         justify-content: center;
         text-align: center;
     }
+
     .download-main-btn {
         margin: 25px auto;
+    }
+
+   /* .footer-main-topline {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }*/
+
+    .footer-main-topline > div {
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+
+    .footer-main-icon {
+        left: 75%;
+    }
+    .footer-main-topline > div {
+        margin-top: 40px;
+    }
+    .footer-main-topline {
+         margin: 0 auto;
+        }
     }
 }
 

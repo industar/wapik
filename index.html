@@ -27,10 +27,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/shakal.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
 
 </head>
 
@@ -39,10 +40,10 @@
             <!--Начало меню -->
             <header class="navbar">
                <div class="container">
-                <div class="row navbar-row">
+                <div class="navbar-row">
                     <div class="nav-bar-left">
                         <a class="logo" href="#">Wapik</a>
-                        <a class="phone"href="#">+62 202 555 0117</a>
+                        <a class="phone" href="#">+62 202 555 0117</a>
                     </div>
 
                     <div class="nav-bar-right navbar-header">
@@ -59,7 +60,7 @@
                             </div>
 
                     </div>
-                   <hr>
+                   <hr class="navbar-hr">
                 <!--Конец меню -->
 
 
@@ -82,7 +83,7 @@
                     <div class="row about-us-topline">
                         <div class="col-sm-12">
                             <h2>About Us</h2>
-                            <hr/>
+                            <hr class="about-us-hr">
                             <p>
                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aut beatae consectetur culpa, explicabo in ipsam iste libero maiores necessitatibus nisi, porro, possimus suscipit tempora vel velit voluptas voluptatem!
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut autem beatae consequatur delectus ea ex harum, ipsum iusto labore, libero mollitia neque nobis officia omnis quaerat rem, temporibus voluptatem.
@@ -117,6 +118,7 @@
                         <div class="row about-us-topline">
                             <div class="col-sm-12">
                                 <h2>Meet Our Team</h2>
+                                <hr class="about-us-hr">
                                 <hr/>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut autem beatae consequatur delectus ea ex harum, ipsum iusto labore, libero mollitia neque nobis officia omnis quaerat rem, temporibus voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -145,10 +147,10 @@
             </section>
             <!--Конец Our team-->
 
-            <!--Начало Скачать-->
+            <!--Начало Download-->
             <section class="download-main">
                 <div class="container">
-                    <div class="row download-main-topline">
+                    <div class="download-main-topline">
                         <div>
                             <h3>Do You Like Wapik? Download it Now</h3>
                                 <p>
@@ -161,50 +163,70 @@
                     </div>
                 </div>
             </section>
-            <!--Конец Скачать-->
+            <!--Конец Download-->
 
             <!--Начало footer-->
             <footer class="footer-main">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
+                    <div class="footer-main-topline">
+                        <div>
                             <address>
                                 <ul class="footer-main-address">
-                                    <li><h6>Wapik</h6></li>
-                                    <li>@: hi@wapik.com</li>
+                                    <li class="footer-main-padding"><h6>Wapik</h6></li>
+                                    <li>@: <span>hi@wapik.com</span></li>
                                     <li>p: +62 202 555 0117</li>
-                                    <li>a: 610 Overlook Circle Suite 323
-                                        Kalamazoo, MI 49009
-                                    </li>
+                                    <li>a: 610 Overlook Circle Suite 323 <br> <span>Kalamazoo, MI 49009</span>  </li>
                                 </ul>
                             </address>
 
                         </div>
-                        <div class="col-sm-3">
+                        <div>
                             <ul class="footer-main-links">
-                                <li><h6>Company</h6></li>
-                                <li>Home</li>
-                                <li>About Us</li>
-                                <li>Pricing</li>
-                                <li>Contact Us</li>
+                                <li class="footer-main-padding"><h6>Company</h6></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-3">
 
-                            <ul>
-                                <li><h6>Others</h6></li>
-                                <li>Help Support</li>
-                                <li>Privacy Policy</li>
-                                <li>Terms</li>
-                                <li>Sitemap</li>
+                        <div>
+                            <ul class="footer-main-others">
+                                <li class="footer-main-padding"><h6>Others</h6></li>
+                                <li><a href="#">Help Support</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Sitemap</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-3">
 
-                            <h6>Newsletter</h6>
-                            <p>Subscribe to our newsletter and get all the cool news</p>
-                            <input class="email" type="email"/>
+                        <div class="footer-main-newsletter">
+                            <h6 class="footer-main-padding">Newsletter</h6>
+                            <p><label for="footer-email">Subscribe to our newsletter and get all <br/> the cool news</label></p>
+                            <div class="footer-main-relative">
+                                <input id="footer-email" class="email" placeholder="Enter Email" type="email"/>
+                                <span class="footer-main-icon">
+                                    <a href="#">
+                                        <i class="fa fa-paper-plane"></i>
+                                    </a>
+                                </span>
+                            </div>
                         </div>
+                    </div>
+                    <div class="footer-main-bottomline">
+
+                            <p>
+                                All rights reserved 2015.
+                            </p>
+
+                                <ul class="social-media">
+                                    <li class="twitter"><a  href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="facebook"><a  href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="instagram"><a  href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="dribble"><a  href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li class="github"><a  href="#"><i class="fa fa-github-alt"></i></a></li>
+
+                                </ul>
                     </div>
                 </div>
             </footer>
