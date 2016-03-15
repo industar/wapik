@@ -31,15 +31,14 @@ body textarea:required:valid {
 .navbar {
     background: url("img/slidecity.jpg") no-repeat center;
     background-size: cover;
-
 }
+
 .navbar-row {
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .navbar-hr {
@@ -59,32 +58,44 @@ body textarea:required:valid {
     text-align: center;
 }
 
-a.logo, a.phone {
+.logo, .phone {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: middle;
-
 }
 
-a.logo  {
+.logo  {
     font-family: "Proxima Nova", sans-serif;
     font-size: 29px;
     font-weight: 700;
     line-height: 46px;
     border-right: 1px solid #ffffff;
-    padding-right: 20px;
-
-
+    padding-right: 26px;
 }
-a.phone {
+.logo-black {
+    color: #0f5f5c;
+}
+
+.phone {
     font-family: Montserrat, sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 21px;
     margin-left: 20px;
-
+    padding-left: 20px;
+    background: url("img/phonewhite.png") no-repeat;
 }
+.phone-gray {
+    color: #83a7a5;
+    background: url("img/phonegray.png") no-repeat;
+}
+
+a.logo:hover, a.logo:focus, a.phone:hover, a.phone:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 
 .main-nav {
     overflow: hidden;
@@ -96,7 +107,7 @@ a.phone {
 }
 
 
-.main-nav-menu li a {
+.main-nav-menu li a {      /* цвет всем ссылкам*/
     color: #ffffff;
     opacity: 0.7;
     font-family: Montserrat, sans-serif;
@@ -105,11 +116,18 @@ a.phone {
     line-height: 21px;
     text-transform: uppercase;
 }
+.main-nav-menu-contact li a {
+    color: #83a7a5;
+}
 
-.main-nav-menu li.get-started {
+.get-started {
     background-color: #ffffff;
     opacity: 0.35;
     border-radius: 2px;
+}
+.get-started-contact {
+    background-color: #6fb048;
+    opacity: 1;
 }
 
 .main-nav-menu li.get-started a {
@@ -120,6 +138,10 @@ a.phone {
     line-height: 31px;
     text-transform: uppercase;
     padding: 13px;
+}
+.main-nav-menu li.get-started-contact a {
+    color: #ffffff;
+    opacity: 1;
 }
 
 .main-nav-menu li.active a {
@@ -153,6 +175,7 @@ a.phone {
     padding: 16px 27px;
     text-decoration: none;
 }
+
 .btn:hover, .download-main-topline .btn:hover {
     color: #ffffff;
     text-decoration: none;
@@ -168,7 +191,7 @@ a.phone {
     margin: 80px auto;
     max-width: 750px;
 }
-.about-us-topline h2, .our-team-main h2 {
+h2 {
     color: #0f5f5c;
     font-family: Roboto, sans-serif;
     font-size: 32px;
@@ -176,12 +199,13 @@ a.phone {
     line-height: 20px;
     margin-bottom: 20px;
 }
+
 .about-us-topline p {
-    margin-top: 38px;
+    margin-top: 14px;
 }
+
 .about-us-topline p, .about-us p {
     color: #83a7a5;
-    font-family: Roboto, sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 22px;
@@ -196,6 +220,7 @@ a.phone {
     margin-bottom: 6px;
 }
 
+
 .about-us-columns .col-sm-4:first-child h4  {
     margin-top: 2px;
 }
@@ -209,6 +234,8 @@ a.phone {
     padding-bottom: 121px;
 
 }
+
+
 
 .our-team-main-columns h5 {
     color: #0f5f5c;
@@ -231,9 +258,13 @@ a.phone {
 
 .download-main {
     height: 200px;
-    background: url("img/downloadbcg.jpg");
+    background: rgba(111, 176, 72, 0.95);
+    background-image: url("img/downloadbcg.jpg");
     display: flex;
     align-items: center;
+}
+.download-main-contact {
+    background-image: url("img/downloadcontact.jpg");
 }
 
 .download-main-topline {
@@ -251,6 +282,7 @@ a.phone {
     margin-bottom: 7px;
 }
 
+
 .download-main-topline p {
     color: #ffffff;
     font-family: Roboto, sans-serif;
@@ -258,11 +290,21 @@ a.phone {
     font-weight: 400;
     line-height: 22px;
 }
+.download-main-contact h3 {
+    color: #0f5f5c;
+}
+
+.download-main-contact p {
+    color: #83a7a5;
+}
 
 .download-main-topline .btn {
     background-color: #49732f;
     font-family: Montserrat, sans-serif;
-    }
+}
+.download-main-contact .btn {
+    background-color: #6fb048;
+}
 
 .footer-main-topline {
     display: flex;
@@ -395,4 +437,123 @@ footer h6 {
 }
 .github {
     background-color: #333;
+}
+
+/*Contact us*/
+.logo-black {
+    border-right: 1px solid #83a7a5;
+}
+
+
+a.logo-black:hover, a.logo-black:focus {
+    color: #0f5f5c;
+    text-decoration: none;
+}
+a.phone-gray:hover, a.phone-gray:focus {
+    color: #83a7a5;
+}
+
+.message-container {
+    width: 996px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.message input, textarea{
+    display: block;
+    width: 95%;
+    height: 46px;
+    background-color: white;
+    border: 1px solid #c1d3d2;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    margin-bottom: 26px;
+    padding-left: 10px;
+}
+
+textarea {
+    height: 124px;
+}
+
+
+.message-form {
+
+    padding-left: 10%;
+}
+
+.message-btn {
+    text-align: left;
+}
+.message-form .btn {
+    padding: 13px 37px;
+}
+
+.contact {
+    text-align: left;
+    padding-right: 10%;
+}
+.contact-margin {
+    padding: 35px 20px 53px 46px;
+    border: 2px dashed #c1d3d2;
+}
+.contact h4{
+    color: #0f5f5c;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+.contact p {
+    color: #83a7a5;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+.contact-address {
+    margin-bottom: 21px;
+    padding-left: 27px;
+    position: relative;
+    background: url("img/address.png") no-repeat ;
+}
+
+.contact-phone, .contact-mail {
+    padding-left: 27px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.contact-phone {
+    background: url("img/phone.png") no-repeat ;
+}
+.contact-mail {
+    background: url("img/mail.png") no-repeat 0 50% ;
+}
+/* Pricing */
+
+.navbar-pricing {
+    background-color: #eef1ec;
+}
+
+.navbar-pricing p {
+    color: #83a7a5;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.pricing-plans div {
+    float: left;
+    background-color: white;
+    border: 1px solid #c1d3d2;
+    border-radius: 3px 0px 0px 3px;
+}
+.pricing-plans {
+    overflow: hidden;
+    margin: 0 auto;
+}
+.plans-properties {
+    text-align: left;
 }

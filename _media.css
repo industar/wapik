@@ -58,12 +58,29 @@
     .footer-main-topline {
          margin: 0 auto;
         }
+    .message input, textarea {
+        width: 100%;
     }
-}
+    .message-form {
+        padding-left: 0;
+    }
+    .contact {
+        padding-right: 0;
+
+    }
+
+    }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    .contact {
+        padding-right: 0;
+        width: 50%;
+        margin: 50px auto;
+    }
+    .message-btn {
+        text-align: center;
+    }
 	
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -91,6 +108,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
 
 }
 
