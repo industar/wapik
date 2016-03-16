@@ -69,14 +69,13 @@
 
             </header>
             <!--Конец слайдер -->
-            <div class="center">
-                <div class="intro">
+            <div class="container center">
+                <div class="row">
+                    <div class="col-sm-12">
 
-                    <div id="map_canvas">Когда-нибудь здесь будет карта</div>
-
+                        <div id="googleMap" style="width:1170px;height:380px;"></div>
+                    </div>
                 </div>
-            </div>
-
 
             <!--Начало Contact Us-->
             <section class="about-us-main">
@@ -134,7 +133,7 @@
                         <div>
                             <h3>Do You Like Wapik? Download it Now</h3>
                                 <p>
-                                    Aliquam aut autem beatae consequatur delectus ea ex harum, ipsum iusto labore.
+                                   Aliquam aut autem beatae consequatur delectus ea ex harum, ipsum iusto labore.
                                 </p>
                         </div>
                         <div class="download-main-btn">
@@ -144,6 +143,8 @@
                 </div>
             </section>
             <!--Конец Download-->
+
+
 
             <!--Начало footer-->
             <footer class="footer-main">
@@ -222,8 +223,20 @@
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
 
+	<![endif]-->
+            <script src="http://maps.googleapis.com/maps/api/js"></script>
+            <script>
+                function initialize() {
+                    var mapProp = {
+                        center:new google.maps.LatLng(51.508742,-0.120850),
+                        zoom:5,
+                        mapTypeId:google.maps.MapTypeId.ROADMAP
+                    };
+                    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
 	<!-- Load CSS -->
 	<script>
 		function loadCSS(hf) {

@@ -312,7 +312,7 @@ h2 {
     justify-content: space-between;
     flex-wrap: wrap;
     align-content:space-between;
-    margin: 60px auto;
+    margin: 100px auto;
     line-height: 28px;
     color: #83a7a5;
     font-size: 13px;
@@ -544,16 +544,92 @@ textarea {
     font-size: 15px;
     font-weight: 400;
 }
+.pricing {
+    margin: 60px 0 107px;
+}
 .pricing-plans div {
-    float: left;
+    display: inline-block;
     background-color: white;
     border: 1px solid #c1d3d2;
-    border-radius: 3px 0px 0px 3px;
+
 }
 .pricing-plans {
     overflow: hidden;
-    margin: 0 auto;
+    margin: 44px auto 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
 }
+.pricing-plans-plus {
+    margin: 0 -4px;
+}
+.pricing-plans p {
+    padding-bottom: 3px;
+}
+.pricing-plans h5 {
+    color: #6fb048;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 24px 0 -5px;
+}
+.pricing-plans span {
+    color: #0f5f5c;
+    font-family: Montserrat, sans-serif;
+    font-size: 65px;
+    line-height: 108px;
+    margin: 0 54px;
+}
+.pricing-plans .pricing-plans-btn {
+    margin: 28px 0 36px;
+    border: none;
+
+}
+p.pricing-plans-month {
+    color: #0f5f5c;
+    font-size: 14px;
+    line-height: 20px;
+    margin: -27px 0 14px;
+}
+
+.plans-properties-main {
+    margin-bottom: 20px;
+}
+
 .plans-properties {
     text-align: left;
+}
+
+.plans-properties li{
+    padding-left: 35px;
+    background: url("img/check.png") no-repeat 0 50%;
+    margin-bottom: 10px;
+    color: #83a7a5;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.plans-properties-topline {
+    margin: 80px 0 30px 0;
+}
+
+.need-help-topline h2 {
+    margin-top: 10px;
+    color: #6fb048;
+}
+
+.need-help-topline p {
+    color: #83a7a5;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 20px;
+}
+p.support-email {
+    color: #0f5f5c;
+    font-size: 18px;
+    margin: 40px 0 90px 0
 }
